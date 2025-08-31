@@ -2,123 +2,283 @@
 <html>
 <head>
     <title>Resume - Thota Leela Sai Krishna</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
             color: #000;
             background-color: #fff;
             margin: 0;
-            padding: 0;
+            padding: 0.5rem 0;
+            line-height: 1.25;
         }
+
         .container {
-            width: 80%;
+            width: 95%;
+            max-width: 700px;
             margin: 0 auto;
             text-align: left;
+            padding: 0.25rem;
         }
+
         h1, h2, h3 {
             color: #000;
+            margin-top: 0;
+            margin-bottom: 0.3rem;
         }
-        .section {
-            margin-bottom: 10px;
+        
+        h1 {
+            font-weight: 600;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 0.2rem;
         }
-        .section-title {
-            background-color: #fff;
-            padding: 5px 0;
-            margin: 0;
+
+        .subtitle {
+            text-align: center;
+            font-weight: 400;
+            margin-bottom: 0.4rem;
+            font-size: 1.05rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+            font-size: 0.8rem;
+        }
+        
+        .contact-info a {
+            text-decoration: none;
+            color: #000;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.2s ease-in-out;
+            white-space: nowrap;
+        }
+        
+        .contact-info a:hover {
             border-bottom: 1px solid #000;
         }
-        .content {
-            margin: 0;
+
+        .section {
+            margin-bottom: 0.75rem;
         }
-        ul {
-            padding-left: 20px;
+        
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+            padding-bottom: 0.2rem;
+            border-bottom: 2px solid #000;
+        }
+
+        .entry {
+            margin-bottom: 0.4rem;
+        }
+        
+        .entry h3 {
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .entry p, .entry ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 0.9rem;
+        }
+        
+        .entry ul {
+            padding-left: 1.2rem;
+        }
+
+        .entry li {
+            position: relative;
+            margin-bottom: 0.2rem;
+        }
+        
+        .entry li::before {
+            content: "•";
+            position: absolute;
+            left: -1.2rem;
+            font-weight: bold;
+            color: #000;
+        }
+        
+        .job-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        
+        .job-title h3 {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        
+        .job-title span {
+            font-style: italic;
+            font-weight: 400;
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+
+        .sub-entry {
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 0.2rem;
+        }
+
+        /* --- Print-specific styles for better PDF output --- */
+        @media print {
+            body {
+                padding: 0;
+                margin: 0;
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+                line-height: 1.0;
+                font-size: 9pt;
+            }
+            .container {
+                width: 100%;
+                max-width: 100%;
+                margin: 0;
+                box-shadow: none;
+                padding: 0.1rem;
+            }
+            h1 { font-size: 1.5rem; }
+            h2 { font-size: 1.1rem; }
+            h3 { font-size: 0.85rem; }
+            .subtitle, .contact-info, .entry p, .entry ul, .entry li, .job-title span, .sub-entry { 
+                font-size: 0.75rem; 
+                line-height: 1.0;
+            }
+            .contact-info { gap: 0.75rem; }
+            .section { margin-bottom: 0.4rem; }
+            .entry { margin-bottom: 0.2rem; }
+            ul { margin-top: 0.2rem; }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Thota Leela Sai Krishna</h1>
-        <h2>Aspiring Software Developer</h2>
-        <div>
-            <p>&#8226; Bhimavaram, Andhra Pradesh, India</p>
-            <p> &#8226;Cell +91-7013875338</p>
-            <p>&#8226;Email: <a href="mailto:thotaleelasaikrishna@gmail.com">thotaleelasaikrishna@gmail.com</a></p>
-            <p>&#8226; <a href="https://www.linkedin.com/in/thota-leela-sai-krishna-8003a6292/">LinkedIn Profile</a></p>
-            <p>&#8226; <a href="https://github.com/Leela-sai-krishna-Thota">GitHub profile</a></p>
+        <p class="subtitle">Aspiring Software Developer</p>
+        <div class="contact-info">
+            <a href="mailto:thotaleelasaikrishna@gmail.com">•thotaleelasaikrishna@gmail.com</a>
+            <span>&bull;</span>
+            <a href="https://www.linkedin.com/in/thota-leela-sai-krishna-8003a6292/">LinkedIn </a>
+            <span>&bull;</span>
+            <a href="https://github.com/Leela-sai-krishna-Thota">GitHub </a>
+            <span>&bull;</span>
+            <a href="https://leetcode.com/u/Leela_338/">LeetCode</a>
         </div>
 
         <div class="section">
             <h2 class="section-title">Professional Summary</h2>
-            <div class="content">
-                <p> Passionate and motivated Computer Science Engineering student at Vishnu Institute of Technology with a strong foundation in web development.Actively involved in Build Club, enhancing practical skills through collaborative projects and hands-on experience.Seeking opportunities to apply knowledge and contribute effectively to real-world projects.Like to do TeamWork and also collaborate with like minded people.</p>
-               
-            </div>
+            <p>Motivated Computer Science Engineering student with a strong foundation in web development, including HTML, CSS, JavaScript, and React. A proven collaborator and problem-solver, I achieved a <b>Runner-Up finish in the PIVOT Hackathon</b>. Seeking to apply my technical knowledge and teamwork abilities to contribute to real-world projects in a challenging software development role.</p>
         </div>
 
         <div class="section">
             <h2 class="section-title">Education</h2>
-            <div class="content">
-                <p>&#8226; <strong>Vishnu Institute of Technology Bhimavaram</strong> (B.Tech. in Computer Science and Engineering, 2023 - 2027, CGPA: 9.01/10)</p>
-                <p>&#8226; <strong>Aditya Junior College</strong> (Intermediate in MPC, 2021 - 2023, GPA: 9.77)</p>
-            </div>
+            <ul>
+                <li>
+                    <div class="job-title">
+                        <h3>Vishnu Institute of Technology Bhimavaram (B.Tech. in Computer Science and Engineering, CGPA: 9.1)</h3>
+                        <span>2023 - 2027</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="job-title">
+                        <h3>Aditya Junior College (Intermediate in MPC, Marks : 977)</h3>
+                        <span>2021 - 2023</span>
+                    </div>
+                </li>
+            </ul>
         </div>
 
         <div class="section">
             <h2 class="section-title">Skills</h2>
-            <div class="content">
-                <ul>
-                    <li><strong>Languages:</strong> C, Python, Java</li>
-                    <li><strong>Technical Skills:</strong> Basics of DSA and DBMS</li>
-                    <li><strong>Technologies:</strong> Web Development (HTML, CSS, JavaScript,React.)</li>
-                    <li><strong>Communication Languages:</strong> Fluent in English, Telugu, and Hindi</li>
-                </ul>
-            </div>
+            <ul>
+                <li><strong>Languages:</strong> C, Python, Java.</li>
+                <li><strong>Technologies:</strong> Web Development (HTML, CSS, JavaScript, React.),Git & Github.</li>
+                <li><strong>Soft Skills:</strong> Collaboration,Leadership,Teamwork and problem-solving.</li>
+            </ul>
         </div>
-
         <div class="section">
-            <h2 class="section-title">Projects and Internship Experience</h2>
-            <div class="content">
-                <ul>
-                    <li><strong>Project1:</strong>Web Development Project on Feedback Collection System.</li>
-                    <li><strong>Project2:</strong>Telegram ChatBot with Firestore Database.</li>
-                    <li><strong>Internship:</strong>Web Development Intern at CoderOne.</li>
-                    <li><strong>Student Campus Ambassador at LetsUpgrade:</strong> Secured a Gold swag kit and recommendation letter from the CEO.</li>
-                    <li><strong>Emertxe student Ambassador:</strong>Served as Emertxe Campus Ambassador, promoting Embedded Systems & IoT among peers through workshops, outreach, and technical engagement.</li>
-
-
-                    <li><strong>GDG  (Google Developer Groups) Hackathon:</strong>Volunteering Experience.</li>
-                </ul>
-            </div>
+            <h2 class="section-title">Projects</h2>
+            <ul>
+                <li>
+                    <div class="job-title">
+                        <h3>Telegram ChatBot with Firestore Database</h3>
+                    </div>
+                    <p>Built a Telegram bot to handle user queries and store data in a Firestore database.</p>
+                </li>
+                <li>
+                    <div class="job-title">
+                        <h3>Food Restaurent Website</h3>
+                    </div>
+                    <p>Designed and developed a responsive restaurant website, showcasing menus and contact information using modern front-end technologies.</p>
+                </li>
+                <li>
+                    <div class="job-title">
+                        <h3>Amazon clone UI</h3>
+                    </div>
+                    <p>Replicated the user interface of the Amazon website to practice and refine front-end development skills.</p>
+                </li>
+            </ul>
         </div>
-
         <div class="section">
-            <h2 class="section-title">Extracurricular Activities</h2>
-            <div class="content">
-                <ul>
-                    <li><strong>Build Club Member (IITMRP):</strong> Collaborated on hands-on projects related to IoT and worked on team-based projects to enhance problem-solving and development skills.</li>
-                </ul>
-            </div>
+            <h2 class="section-title">Experience</h2>
+            <ul>
+                <li>
+                    <div class="job-title">
+                        <h3>Internship: Web Development Intern at CoderOne</h3>
+                        <span>Dec 2024 - Feb 2025</span>
+                    </div>
+                    <p>Assisted in the development of front-end components using HTML, CSS, and JavaScript.</p>
+                </li>
+                <li>
+                    <div class="job-title">
+                        <h3>Student Campus Ambassador at LetsUpgrade</h3>
+                        <span>Dec 2024 - Jan 2025</span>
+                    </div>
+                    <p><b>Helped nearly 150 students</b> with their professional skill development and organized events on campus, leading to a Gold swag kit and a recommendation letter from the CEO.</p>
+                </li>
+               
+                <li>
+                    <div class="job-title">
+                        <h3>Volunteer & Mentor Experience: GDG(kode-kurukshetra) and Nexora Hackathons</h3>
+                    </div>
+                   
+                </li>
+                
+            </ul>
         </div>
-
         <div class="section">
             <h2 class="section-title">Participations and Certifications</h2>
-            <div class="content">
-                <ul>
-                    <li><strong>Hackerrank:</strong> 4 Stars in Python</li>
-                    <li><strong>Hackathons:</strong> SIH Internal Hackathon, Failathon conducted by VITB, E-cell Hack-A-Vit</li>
-                    <li><strong>TEDx Talk:</strong> Attendee</li>
-                </ul>
+            <div class="sub-entry">
+                <div class="job-title">
+                    <h3>•Build Club Member (IITMRP)</h3>
+                    <span>Feb 2025 - Present</span>
+                </div>
             </div>
-        </div>
+            <p>Collaborated on hands-on projects related to IoT and worked on team-based projects to enhance problem-solving and development skills.</p>
 
+            <p><b>• Hackathons Participated:</b> SIH Internal Hackathon, Failathon conducted by VITB, E-cell Hack-A-Vit, PIVOT(MAKE-A-THON)</p>
+        </div>
         <div class="section">
             <h2 class="section-title">Interests</h2>
-            <div class="content">
-                <ul>
-                    <li><strong>Professional:</strong> Web Development, Networking,Communication,Leadership and Designing</li>
-                    <li><strong>Personal:</strong> Hackathons, Fitness, Sports.</li>
-                </ul>
-            </div>
+            <ul>
+                <li><strong>Professional & Personal:</strong> Networking, Designing, Hackathons, Fitness, Sports.</li>
+                
+            </ul>
         </div>
     </div>
 </body>
