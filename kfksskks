@@ -1,0 +1,96 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.7in,right=0.7in,top=0.7in,bottom=0.7in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+
+\begin{document}
+
+%-------------------------
+% Name
+%-------------------------
+\begin{center}
+    {\LARGE \textbf{Thota Leela sai krishna}}\\
+    \small
+    Phone: +91-7013875338 \\
+    Email: thotaleelasaikrishna@email.com \\
+    LinkedIn: \href{www.linkedin.com/in/thota-leela-sai-krishna-8003a6292}{linkedin.com/in/yourprofile} \\
+    GitHub: \href{https://github.com/Leela-sai-krishna-Thota}{github.com/yourusername} \\
+    
+\end{center}
+\section*{Career Objective}
+Motivated Computer Science student aiming to secure a software development role in a product-based company. Passionate about building scalable applications and improving problem-solving skills through Data Structures and Algorithms.
+
+%-------------------------
+\section*{Education}
+\textbf{Vishnu Institute of Technology} \hfill 2023 -- 2027\\
+B.Tech in Computer Science and Engineering \hfill CGPA: 9.03/10\\
+\textbf{Aditya junior college} \hfill 2021 -- 2023\\
+Intermediate(MPC) \hfill MARKS: 977/1000\
+\section*{Skills}
+\textbf{Programming:} Java, Python, C, JavaScript
+\item \textbf{Web Development:} HTML, CSS, Node.js
+\item \textbf{Databases:} MongoDB, Firebase, SQL
+\item \textbf{Tools:} Git, GitHub, N8N
+\item \textbf{Core Concepts:} Data Structures and Algorithms, OOPs
+\end{itemize}
+
+%-------------------------
+\section*{Projects}
+
+\textbf{Smart Document Scanner \& Summarizer} \\
+\begin{itemize}[noitemsep]
+\item Developed a full-stack application integrating OCR and NLP for document scanning and summarization
+\item Implemented backend services and frontend interface for seamless document processing
+\item Improved efficiency of document handling and content extraction
+\end{itemize}
+
+\textbf{Travel Blog Website} \\
+\begin{itemize}[noitemsep]
+\item Built a full-stack blog platform using HTML, CSS, JavaScript, Node.js, and MongoDB
+\item Implemented CRUD operations for creating and managing blog posts
+\item Designed responsive UI for better user experience
+\end{itemize}
+
+\textbf{Food Website (Frontend + Authentication)} \\
+\begin{itemize}[noitemsep]
+\item Designed responsive landing pages using HTML and CSS
+\item Integrated Firebase authentication including login, signup, and Google Sign-In
+\item Implemented user session handling for improved usability
+\end{itemize}
+
+
+
+%-------------------------
+\section*{Internships}
+
+\textbf{Web Development Intern - CoderOne} \\
+\begin{itemize}[noitemsep]
+\item Developed a feedback collection system for users
+\item Improved UI design and backend integration for better performance
+\end{itemize}
+
+\textbf{Web Development Intern - Quarter One} \\
+\begin{itemize}[noitemsep]
+\item Worked on frontend and backend components of web applications
+\item Gained experience in real-world development practices
+\end{itemize}
+
+%-------------------------
+\section*{Achievements \& Activities}
+\begin{itemize}[noitemsep]
+\item Runner-up at Pivot Hackathon conducted at Vishnu institute of technology 
+\item Selected among Top 45 out of 230 teams in internal SIH Screening
+\item Generated 3Lakh+ Turnover in 4 months as a Supervisor at Forever campany
+\item Awarded Gold swag kit (Top5) at LetsUpgrade Campus ambassador program
+\item Achieved Top3 (Diamond Level) nationally as Campus Ambassador at Emertxe 
+
+\end{itemize}
+
+%-------------------------
+
+
+\end{document}
